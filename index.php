@@ -73,6 +73,22 @@
           </div>
         </div>
       </section>
+      <section class="container">
+      <div class="row">
+        <div class="col-100 text-center">
+          <?php
+         $hours = date("H");
+         if ($hours < 12) {
+             echo "Dobré ráno!";
+         } elseif ($hours < 18) {
+             echo "Dobrý deň!";
+         } else {
+             echo "Dobrý večer!";
+         }  
+          ?>
+        </div>   
+      </div>
+    </section>
     </main>
     
   <footer class="container bg-dark text-white">
