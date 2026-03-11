@@ -39,19 +39,37 @@
           <p><strong><em>Elit culpa id mollit irure sit. Ex ut et ea esse culpa officia ea incididunt elit velit veniam qui. Mollit deserunt culpa incididunt laborum commodo in culpa.</em></strong></p>
         </div>
       </div>
+      <section class="container">
+    <?php include "otazky.php"; ?>
+    <?php for ($i = 0; $i < count($otazky); $i++) { ?>
+        <div class="accordion">
+            <div class="question"><?php echo $otazky[$i]; ?></div>
+            <div class="answer"><?php echo $odpovede[$i]; ?></div>
+        </div>
+    <?php } ?>
+    <section class="container">
+    <?php include "otazky.php"; ?>
+    <?php for ($i = 0; $i < count($otazky); $i++) { ?>
+        <div class="accordion">
+            <div class="question"><?php echo $otazky[$i]; ?></div>
+            <div class="answer"><?php echo $odpovede[$i]; ?></div>
+        </div>
+    <?php } ?>
+</section>
+</section>
     </section>
       <section class="container">
       <div class="accordion">
-        <div class="question">Otázka 1</div>
-        <div class="answer">Odpoveď 1</div>
+        <div class="question"> Čo je hlavné mesto Slovenska?</div>
+        <div class="answer">Bratislava</div>
       </div>
       <div class="accordion">
-        <div class="question">Otázka 2</div>
-        <div class="answer">Odpoveď 2</div>
+        <div class="question">Koľko je 2 + 2?</div>
+        <div class="answer">4</div>
       </div>
       <div class="accordion">
-        <div class="question">Otázka 3</div>
-        <div class="answer">Odpoveď 3</div>
+        <div class="question">Aký plyn dýchame?</div>
+        <div class="answer">Kyslík</div>
       </div>
     </section>
     </section>
